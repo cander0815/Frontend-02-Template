@@ -132,7 +132,7 @@ module.exports = function (el) {
     let item = items[i];
     let itemStyle = getStyle(item);
 
-    if (itemStyle[mainSize] === null) {
+    if (typeof itemStyle[mainSize] !== 'number') {
       itemStyle[mainSize] = 0;
     }
 
@@ -199,14 +199,14 @@ module.exports = function (el) {
           continue;
         }
       }
-
+      // 计算主轴
       if (flexTotal > 0) {
         let currentMain = mainBase;
         for (let i = 0; i < items.length; i++) {
           let item = items[i];
           let itemStyle = getStyle(item);
           if (itemStyle.flex) {
-            itemStyle[mainSize] = (mainSpace / flexTotal) * itemStyle.flex;
+            itemStyle[mainSize] = ((items.crossSpace- currentMain) / flexTotal) * itemStyle.flex;
           }
           itemStyle[mainSrart] = currentMain;
           itemStyle[mainEnd] = itemStyle[mainSrart] + mainSign * itemStyle[mainSize];
@@ -300,10 +300,9 @@ module.exports = function (el) {
       let item = items[i];
       let itemStyle = getStyle(item);
 
-      let align = itemStyle.alignSelf || style.alignItems;
-      if (item[crossSize] === null) {
-        itemStyle[crossSize] = (align === 'strerch') ?
-          lineCrossSize : 0;
+      let align = itemStyle.alignSelf || style['align-items'] ||style.alignItems;
+      if (typeof item[crossSize] !== 'number') {
+        itemStyle[crossSize] = lineCrossSize;
       }
       if (align === 'flex-start') {
         itemStyle[crossStart] = crossBase;

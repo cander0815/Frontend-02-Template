@@ -20,6 +20,7 @@ var start = function () {
     height: 300px;
     display: flex;
     background-color: rgb(255,255,255);
+    align-items: center;
     }
     #container #myid {
       width: 200px;
