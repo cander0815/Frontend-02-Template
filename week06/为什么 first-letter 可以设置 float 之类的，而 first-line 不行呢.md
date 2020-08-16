@@ -10,5 +10,5 @@
  
  ::first-letter会选中某 block-level element（块级元素）第一行的第一个字母，并且文字所处的行之前没有其他内容（如图片和内联的表格） 。
  
- 如果first-line可以设置float会影响整体的dom元素的布局
+ 如果first-line可以设置float会影响整体的dom元素的布局 
  
