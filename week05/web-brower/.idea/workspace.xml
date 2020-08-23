@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87eb2120-bc8f-4102-9c94-8e0fc0586eae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../week06/为什么 first-letter 可以设置 float 之类的，而 first-line 不行呢.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../week06/为什么 first-letter 可以设置 float 之类的，而 first-line 不行呢.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.10.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
+    <property name="javascript.nodejs.core.library.typings.version" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -71,6 +71,8 @@
       <workItem from="1596361478971" duration="15664000" />
       <workItem from="1596418762019" duration="18000" />
       <workItem from="1597371425184" duration="1129000" />
+      <workItem from="1597626659019" duration="597000" />
+      <workItem from="1597645046750" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="代码提交">
       <created>1596380141610</created>
