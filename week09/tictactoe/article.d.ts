@@ -1,0 +1,3 @@
+interface IArticleComment {
+  title: string,
+}
